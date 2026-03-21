@@ -1,0 +1,637 @@
+    html, body{
+        width:100%;
+        margin:0;
+        padding:0;
+        overflow-x:hidden;
+    }
+
+    body{
+        font-family: Arial;
+        background:#f4f4f4;
+        color:#333;
+        -webkit-text-size-adjust:100%;
+    }
+    
+    header{
+        background:#222;
+        color:white;
+        padding:30px;
+        text-align:center;
+    }
+
+    .header-content{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:40px;
+        flex-wrap:wrap;
+    }
+
+    .header-text{
+        text-align:left;
+    }
+    
+    nav{
+        margin-top:40px;
+    }
+    
+    nav a{
+        color:rgb(255, 255, 255);
+        margin:0 30px;
+        text-decoration:none;
+        font-size:1.1rem;
+    }
+    
+    .research-row{
+        display:flex;
+        gap:24px;
+        align-items:flex-start;
+        margin-bottom:32px;
+        background:white;
+        padding:20px;
+        border-radius:8px;
+        box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .header-container{
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        gap:20px;
+        max-width:600px;
+        margin:auto;
+    }
+    
+    .profile{
+        width:200px;
+        height:200px;
+        border-radius:50%;
+        object-fit:cover;
+        object-position: center 30%;
+    }
+    
+    .header-text h1{
+        margin:0;
+        font-size:2.25rem;
+    }
+    
+    .header-text p{
+        margin:5px 0 0 0;
+        font-size:1.2rem;
+    }
+
+    #about,
+    #research,
+    #projects,
+    #awards,
+    #skills{
+        max-width:1100px;
+    }
+
+    #about h2,
+    #research h2,
+    #projects h2,
+    #awards h2,
+    #skills h2{
+        font-size:1.75rem;
+    }
+
+    #about h3,
+    #research h3,
+    #projects h3,
+    #awards h3,
+    #skills h3{
+        font-size:1.35rem;
+    }
+
+    #about p,
+    #about li{
+        font-size:1.15rem;
+        line-height:1.6;
+    }
+
+    .research-row{
+        display:flex;
+        gap:24px;
+        align-items:flex-start;
+        margin-bottom:32px;
+        background:white;
+        padding:20px;
+        border-radius:8px;
+        box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .research-video{
+        flex-shrink:0;
+        width:360px;
+    }
+
+    .research-video video{
+        display:block;
+        width:100%;
+        border-radius:6px;
+    }
+
+    .research-intro{
+        flex:1;
+        min-width:0;
+    }
+
+    .research-intro p{
+        margin:0 0 10px 0;
+    }
+
+    .research-intro p:last-child{
+        margin-bottom:0;
+    }
+
+    @media (max-width: 700px){
+        .research-row{ flex-direction: column; }
+        .research-video{ width: 100%; }
+    }
+
+    section{
+        padding:20px 40px 40px;
+        max-width:900px;
+        margin:0 auto;
+    }
+    
+    h2{
+        border-bottom:2px solid #ddd;
+        padding-bottom:10px;
+    }
+    
+    .project,
+    .research-project{
+        background:white;
+        padding:20px;
+        margin-top:20px;
+        border-radius:8px;
+        box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .project-more{
+        display:none;
+    }
+
+    .projects-list.expanded .project-more{
+        display:block;
+    }
+
+    .see-more-btn{
+        display:block;
+        margin:24px auto 0;
+        padding:12px 28px;
+        background:#333;
+        color:#fff;
+        border:none;
+        border-radius:9999px;
+        font-size:1rem;
+        font-weight:500;
+        cursor:pointer;
+        transition:background 0.2s;
+    }
+
+    .see-more-btn:hover{
+        background:#222;
+    }
+
+    .research-project .research-row{
+        margin-bottom:0;
+    }
+
+    .research-link{
+        margin-top:28px;
+        margin-bottom:0;
+        display:flex;
+        flex-wrap:wrap;
+        gap:12px;
+    }
+
+    .research-btn{
+        display:inline-flex;
+        align-items:center;
+        gap:8px;
+        padding:10px 18px;
+        background:#333;
+        color:#fff;
+        text-decoration:none;
+        border-radius:9999px;
+        font-weight:500;
+        font-size:0.95rem;
+        transition:background 0.2s;
+    }
+
+    .research-btn:hover{
+        background:#222;
+    }
+
+    .research-btn i{
+        font-size:1em;
+    }
+
+    .point-cloud-to-action-row{
+        display:flex;
+        gap:24px;
+        align-items:flex-start;
+        margin:16px 0;
+    }
+
+    .point-cloud-to-action-video{
+        flex-shrink:0;
+        width:360px;
+    }
+
+    .point-cloud-to-action-video video{
+        display:block;
+        width:100%;
+        border-radius:6px;
+    }
+
+    .point-cloud-to-action-intro{
+        flex:1;
+        min-width:0;
+    }
+
+    .point-cloud-to-action-intro p{
+        margin:0 0 8px 0;
+    }
+
+    .point-cloud-to-action-intro p:last-child{
+        margin-bottom:0;
+    }
+
+    @media (max-width: 700px){
+        .point-cloud-to-action-row{ flex-direction: column; }
+        .point-cloud-to-action-video{ width: 100%; }
+    }
+
+    .diffusion-row{
+        display:flex;
+        gap:24px;
+        align-items:flex-start;
+        margin:16px 0;
+    }
+
+    .diffusion-video{
+        flex-shrink:0;
+        width:360px;
+    }
+
+    .diffusion-video video{
+        display:block;
+        width:100%;
+        border-radius:6px;
+    }
+
+    .diffusion-intro{
+        flex:1;
+        min-width:0;
+    }
+
+    .diffusion-intro p{
+        margin:0 0 8px 0;
+    }
+
+    .diffusion-intro p:last-child{
+        margin-bottom:0;
+    }
+
+    @media (max-width: 700px){
+        .diffusion-row{ flex-direction: column; }
+        .diffusion-video{ width: 100%; }
+    }
+
+    .keypoint-row{
+        display:flex;
+        gap:24px;
+        align-items:flex-start;
+        margin:16px 0;
+    }
+
+    .keypoint-video{
+        flex-shrink:0;
+        width:360px;
+    }
+
+    .keypoint-video video{
+        display:block;
+        width:100%;
+        border-radius:6px;
+    }
+
+    .keypoint-intro{
+        flex:1;
+        min-width:0;
+    }
+
+    .keypoint-intro p{
+        margin:0 0 8px 0;
+    }
+
+    .keypoint-intro p:last-child{
+        margin-bottom:0;
+    }
+
+    @media (max-width: 700px){
+        .keypoint-row{ flex-direction: column; }
+        .keypoint-video{ width: 100%; }
+    }
+
+    .video-mask-change-row{
+        display:flex;
+        gap:24px;
+        align-items:flex-start;
+        margin:16px 0;
+    }
+    
+    .object-aware-real-time-video-stylization-video{
+        flex-shrink:0;
+        width:360px;
+    }
+
+    .object-aware-real-time-video-stylization-video video{
+        display:block;
+        width:100%;
+        border-radius:6px;
+    }
+
+    .object-aware-real-time-video-stylization-intro{
+        flex:1;
+        min-width:0;
+    }
+
+    .object-aware-real-time-video-stylization-intro p{
+        margin:0 0 8px 0;
+    }
+
+    .object-aware-real-time-video-stylization-intro p:last-child{
+        margin-bottom:0;
+    }
+
+    @media (max-width: 700px){
+        .video-mask-change-row{ flex-direction: column; }
+        .object-aware-real-time-video-stylization-video{ width: 100%; }
+    }
+
+    .performance-comparison-row{
+        display:flex;
+        gap:24px;
+        align-items:flex-start;
+        margin:16px 0;
+    }
+
+    .performance-comparison-video{
+        flex-shrink:0;
+        width:360px;
+    }
+
+    .performance-comparison-video video{
+        display:block;
+        width:100%;
+        border-radius:6px;
+    }
+
+    .performance-comparison-intro{
+        flex:1;
+        min-width:0;
+    }
+
+    .performance-comparison-intro p{
+        margin:0 0 8px 0;
+    }
+
+    .performance-comparison-intro p:last-child{
+        margin-bottom:0;
+    }
+
+    @media (max-width: 700px){
+        .performance-comparison-row{ flex-direction: column; }
+        .performance-comparison-video{ width: 100%; }
+    }
+
+    .skills-list{
+        background:white;
+        padding:20px;
+        margin-top:20px;
+        border-radius:8px;
+        box-shadow:0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    .skills-list ul{
+        list-style:none;
+        padding:0;
+        margin:0;
+    }
+
+    .skills-list ul li{
+        margin-bottom:10px;
+    }
+
+    .skills-list ul li:before{
+        content:'\2022';
+        margin-right:10px;
+    }
+
+    footer{
+        width:100%;
+        background:#cec9c9;
+        color:rgb(107, 99, 99);
+        text-align:center;
+        padding:40px 20px 20px;
+        margin-top:40px;
+        box-sizing:border-box;
+    }
+
+    .footer-contact{
+        margin-bottom:24px;
+    }
+
+    .footer-contact h2{
+        border-bottom-color:rgba(255,255,255,0.3);
+        color:rgba(255, 255, 255, 0.8);
+        margin-top:0;
+    }
+
+    .footer-contact-items{
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        gap:24px 40px;
+    }
+
+    .footer-contact-items span{
+        white-space:nowrap;
+    }
+
+    .footer-contact-items i{
+        margin-right:8px;
+        opacity:0.9;
+    }
+
+    .footer-contact a{
+        color:#475675;
+        text-decoration:none;
+    }
+
+    .footer-contact a:hover{
+        text-decoration:underline;
+    }
+
+    .footer-copyright{
+        margin:0;
+        padding-top:16px;
+        border-top:1px solid rgba(255,255,255,0.2);
+        font-size:0.9rem;
+        opacity:0.9;
+    }
+
+
+    html{
+        scroll-behavior:smooth;
+    }
+
+    /* Mobile & tablet responsive */
+    @media (max-width: 768px){
+        header{
+            padding:20px 16px;
+        }
+
+        .header-content{
+            gap:24px;
+        }
+
+        .profile{
+            width:120px;
+            height:120px;
+        }
+
+        .header-text h1{
+            font-size:1.6rem;
+        }
+
+        .header-text p{
+            font-size:1rem;
+        }
+
+        .header-text{
+            text-align:center;
+        }
+
+        nav{
+            margin-top:24px;
+            display:flex;
+            flex-wrap:wrap;
+            justify-content:center;
+            gap:8px 12px;
+        }
+
+        nav a{
+            margin:0;
+            font-size:0.95rem;
+            padding:6px 10px;
+        }
+
+        section{
+            padding:20px 16px 32px;
+        }
+
+        .research-video,
+        .point-cloud-to-action-video,
+        .diffusion-video,
+        .keypoint-video,
+        .object-aware-real-time-video-stylization-video,
+        .performance-comparison-video{
+            width:100%;
+        }
+
+        .footer-contact-items{
+            flex-direction:column;
+            align-items:center;
+            gap:16px;
+        }
+
+        .footer-contact-items span{
+            white-space:normal;
+            text-align:center;
+        }
+    }
+
+    /* Phone portrait & small screens */
+    @media (max-width: 480px){
+        header{
+            padding:16px 12px;
+        }
+
+        .profile{
+            width:100px;
+            height:100px;
+        }
+
+        .header-text h1{
+            font-size:1.4rem;
+        }
+
+        nav a{
+            font-size:0.85rem;
+            padding:4px 8px;
+        }
+
+        #about h2,
+        #research h2,
+        #projects h2,
+        #awards h2,
+        #skills h2{
+            font-size:1.4rem;
+        }
+
+        #about h3,
+        #research h3,
+        #projects h3,
+        #awards h3,
+        #skills h3{
+            font-size:1.15rem;
+        }
+
+        .project,
+        .research-project{
+            padding:16px;
+        }
+
+        .research-link{
+            flex-direction:column;
+        }
+
+        .research-btn{
+            justify-content:center;
+        }
+
+        .see-more-btn{
+            width:100%;
+            max-width:280px;
+        }
+    }
+
+    /* Landscape phones – wider but short */
+    @media (max-height: 500px) and (orientation: landscape){
+        header{
+            padding:16px;
+        }
+
+        .header-content{
+            gap:16px;
+        }
+
+        .profile{
+            width:80px;
+            height:80px;
+        }
+
+        nav{
+            margin-top:16px;
+        }
+
+        section{
+            padding:16px 20px 24px;
+        }
+    }
