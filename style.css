@@ -132,6 +132,125 @@
         border-radius:6px;
     }
 
+    /* Fullscreen: avoid black/empty frame — fill screen and letterbox */
+    video:fullscreen,
+    video:-webkit-full-screen{
+        width:100%;
+        height:100%;
+        max-height:100vh;
+        max-width:100vw;
+        object-fit:contain;
+        background:#000;
+        border-radius:0;
+    }
+
+    .video-deferred{
+        width:100%;
+    }
+
+    .video-deferred-inner{
+        position:relative;
+        width:100%;
+        padding-bottom:56.25%;
+        background:#222;
+        border-radius:6px;
+        overflow:hidden;
+    }
+
+    .video-deferred-preview{
+        position:absolute;
+        inset:0;
+        width:100%;
+        height:100%;
+        object-fit:cover;
+        display:block;
+        z-index:0;
+    }
+
+    .video-deferred-chrome{
+        position:absolute;
+        left:0;
+        right:0;
+        bottom:0;
+        z-index:2;
+        display:flex;
+        justify-content:flex-end;
+        align-items:center;
+        padding:10px 12px 12px;
+        background:linear-gradient(to top, rgba(0,0,0,0.72), transparent);
+        opacity:0;
+        pointer-events:none;
+        transition:opacity 0.2s ease;
+    }
+
+    .video-deferred-inner:hover .video-deferred-chrome,
+    .video-deferred-inner:focus-within .video-deferred-chrome{
+        opacity:1;
+        pointer-events:auto;
+    }
+
+    @media (hover: none){
+        .video-deferred-chrome{
+            opacity:1;
+            pointer-events:auto;
+        }
+    }
+
+    .video-deferred-fs{
+        width:44px;
+        height:44px;
+        border:none;
+        border-radius:8px;
+        background:rgba(255,255,255,0.2);
+        color:#fff;
+        font-size:1.1rem;
+        cursor:pointer;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        transition:background 0.2s;
+    }
+
+    .video-deferred-fs:hover{
+        background:rgba(255,255,255,0.35);
+    }
+
+    .video-deferred-fs:focus-visible{
+        outline:2px solid #fff;
+        outline-offset:2px;
+    }
+
+    .video-hd-holder{
+        position:relative;
+        width:100%;
+        background:#111;
+        border-radius:6px;
+        overflow:hidden;
+    }
+
+    .video-hd-holder video{
+        display:block;
+        width:100%;
+        border-radius:6px;
+        vertical-align:top;
+    }
+
+    .video-hd-loading{
+        position:absolute;
+        inset:0;
+        z-index:1;
+        display:flex;
+        align-items:center;
+        justify-content:center;
+        padding:16px;
+        text-align:center;
+        background:#1a1a1a;
+        color:#e8e8e8;
+        font-size:0.95rem;
+        line-height:1.4;
+        pointer-events:none;
+    }
+
     .research-intro{
         flex:1;
         min-width:0;

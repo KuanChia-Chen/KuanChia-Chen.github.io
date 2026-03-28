@@ -64,10 +64,14 @@ Current interests:
 
     <div class="research-row">
         <div class="research-video">
-            <video width="100%" autoplay loop muted playsinline>
-                <source src="videos/config1.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-deferred" data-hd-src="videos/config1.mp4" data-hd-type="video/mp4">
+                <div class="video-deferred-inner">
+                    <video class="video-deferred-preview" width="100%" autoplay muted loop playsinline preload="none" data-preview-src="videos/previews/config1_small.mp4" data-preview-type="video/mp4"></video>
+                    <div class="video-deferred-chrome">
+                        <button type="button" class="video-deferred-fs" aria-label="Fullscreen, full quality"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
             <p class="research-link">
                 <a class="research-btn" href="https://osudrl.github.io/Humanoid_Hanoi/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-file-lines"></i> Project page</a>
                 <a class="research-btn" href="https://arxiv.org/abs/2602.13850" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-book-open"></i> ArXiv</a>
@@ -98,10 +102,14 @@ Current interests:
     
     <div class="point-cloud-to-action-row">
         <div class="point-cloud-to-action-video">
-            <video width="100%" autoplay loop muted playsinline>
-                <source src="videos/point_net_aux_loss_2025-08-21.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-deferred" data-hd-src="videos/point_net_aux_loss_2025-08-21.mp4" data-hd-type="video/mp4">
+                <div class="video-deferred-inner">
+                    <video class="video-deferred-preview" width="100%" autoplay muted loop playsinline preload="none" data-preview-src="videos/previews/point_net_aux_loss_2025-08-21_small.mp4" data-preview-type="video/mp4"></video>
+                    <div class="video-deferred-chrome">
+                        <button type="button" class="video-deferred-fs" aria-label="Fullscreen, full quality"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="point-cloud-to-action-intro">
             <p>The project is an hierarchical learning system for robotic manipulation using raw 3D point cloud observations. The goal is to train a robot to robustly grasp boxes across a wide range of positions, orientations, and sizes without relying on predefined object models or QR codes.</p>
@@ -119,10 +127,14 @@ Current interests:
 
     <div class="diffusion-row">
         <div class="diffusion-video">
-            <video width="100%" autoplay loop muted playsinline>
-                <source src="videos/diffusion_x10.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-deferred" data-hd-src="videos/diffusion_x10.mp4" data-hd-type="video/mp4">
+                <div class="video-deferred-inner">
+                    <video class="video-deferred-preview" width="100%" autoplay muted loop playsinline preload="none" data-preview-src="videos/previews/diffusion_x10_small.mp4" data-preview-type="video/mp4"></video>
+                    <div class="video-deferred-chrome">
+                        <button type="button" class="video-deferred-fs" aria-label="Fullscreen, full quality"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="diffusion-intro">
             <p>This project is a diffusion-based policy for robotic manipulation, where the model learns to generate control actions conditioned on object properties such as initial position, orientation, and size. Training data was collected from a VR interface in the real world. The total dataset includes 100 human-demonstrated trajectories. The learned policy enables the robot to robustly pick up boxes from a small dataset.</p>
@@ -140,10 +152,14 @@ Current interests:
 
     <div class="keypoint-row">
         <div class="keypoint-video">
-            <video width="100%" autoplay loop muted playsinline>
-                <source src="videos/digit_hard_task.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-deferred" data-hd-src="videos/digit_hard_task.mp4" data-hd-type="video/mp4">
+                <div class="video-deferred-inner">
+                    <video class="video-deferred-preview" width="100%" autoplay muted loop playsinline preload="none" data-preview-src="videos/previews/digit_hard_task_small.mp4" data-preview-type="video/mp4"></video>
+                    <div class="video-deferred-chrome">
+                        <button type="button" class="video-deferred-fs" aria-label="Fullscreen, full quality"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="keypoint-intro">
             <p>I developed a keypoint mimic framework for robot teleoperation using a VR headset. The system maps human hand keypoints and locomotion inputs, captured via a VR headset and controllers, into robot control commands. This enables the robot to execute complex, coordinated behaviors. The setup also serves as an efficient pipeline for collecting high-quality demonstration data.</p>
@@ -161,10 +177,14 @@ Current interests:
 
     <div class="video-mask-change-row">
         <div class="object-aware-real-time-video-stylization-video">
-            <video width="100%" autoplay loop muted playsinline>
-                <source src="videos/segmentation_style_change.mov" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-deferred" data-hd-src="videos/segmentation_style_change.mp4" data-hd-type="video/mp4">
+                <div class="video-deferred-inner">
+                    <video class="video-deferred-preview" width="100%" autoplay muted loop playsinline preload="none" data-preview-src="videos/previews/segmentation_style_change_small.mp4" data-preview-type="video/mp4"></video>
+                    <div class="video-deferred-chrome">
+                        <button type="button" class="video-deferred-fs" aria-label="Fullscreen, full quality"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="object-aware-real-time-video-stylization-intro">
             <p>In this project, we propose a framework that combines zero-shot video object segmentation with fast neural style transfer to have real-time, object-aware stylization. Our method uses a Transformer-based model to segment and preserve foreground objects, while a feed-forward network applies artistic style transformations to the background.</p>
@@ -182,10 +202,14 @@ Current interests:
     
     <div class="performance-comparison-row">
         <div class="performance-comparison-video">
-            <video width="100%" autoplay loop muted playsinline>
-                <source src="videos/CPU_GPU_Parallel_Compare.mp4" type="video/mp4">
-                Your browser does not support the video tag.
-            </video>
+            <div class="video-deferred" data-hd-src="videos/CPU_GPU_Parallel_Compare.mp4" data-hd-type="video/mp4">
+                <div class="video-deferred-inner">
+                    <video class="video-deferred-preview" width="100%" autoplay muted loop playsinline preload="none" data-preview-src="videos/previews/CPU_GPU_Parallel_Compare_small.mp4" data-preview-type="video/mp4"></video>
+                    <div class="video-deferred-chrome">
+                        <button type="button" class="video-deferred-fs" aria-label="Fullscreen, full quality"><i class="fa-solid fa-expand" aria-hidden="true"></i></button>
+                    </div>
+                </div>
+            </div>
         </div>
         <div class="performance-comparison-intro">
             <p>In this project, I developed a shooting game to evaluate the performance differences between three computation modes: normal CPU, multithreaded CPU, and GPU parallelization using CUDA.</p>
@@ -251,6 +275,151 @@ Current interests:
         btn.setAttribute('aria-expanded', expanded);
         btn.textContent = expanded ? 'See less' : 'See more';
     });
+})();
+
+(function() {
+    function attachPreviewSource(vid) {
+        if (vid.getAttribute('data-preview-attached')) return;
+        var src = vid.getAttribute('data-preview-src');
+        if (!src) return;
+        vid.setAttribute('data-preview-attached', '1');
+        var type = vid.getAttribute('data-preview-type') || 'video/mp4';
+        var s = document.createElement('source');
+        s.src = src;
+        s.type = type;
+        vid.appendChild(s);
+        vid.load();
+        vid.play().catch(function() {});
+    }
+
+    var previews = document.querySelectorAll('.video-deferred-preview[data-preview-src]');
+    if (!('IntersectionObserver' in window)) {
+        previews.forEach(attachPreviewSource);
+        return;
+    }
+    var io = new IntersectionObserver(function(entries) {
+        entries.forEach(function(entry) {
+            if (!entry.isIntersecting) return;
+            io.unobserve(entry.target);
+            attachPreviewSource(entry.target);
+        });
+    }, { root: null, rootMargin: '200px 0px', threshold: 0.01 });
+    previews.forEach(function(v) {
+        io.observe(v);
+    });
+})();
+
+(function() {
+    function requestVideoFullscreen(video) {
+        if (video.requestFullscreen) {
+            return video.requestFullscreen({ navigationUI: 'hide' });
+        }
+        if (video.webkitRequestFullscreen) {
+            return Promise.resolve(video.webkitRequestFullscreen());
+        }
+        if (video.webkitEnterFullscreen) {
+            try {
+                video.webkitEnterFullscreen();
+                return Promise.resolve();
+            } catch (err) {
+                return Promise.reject(err);
+            }
+        }
+        return Promise.reject(new Error('Fullscreen not supported'));
+    }
+
+    document.querySelectorAll('.video-deferred').forEach(function(wrap) {
+        var fsBtn = wrap.querySelector('.video-deferred-fs');
+        var preview = wrap.querySelector('.video-deferred-preview');
+        if (!fsBtn) return;
+        fsBtn.addEventListener('click', function(e) {
+            e.preventDefault();
+            e.stopPropagation();
+            var parent = wrap.parentNode;
+            var hdSrc = wrap.getAttribute('data-hd-src');
+            var hdType = wrap.getAttribute('data-hd-type') || 'video/mp4';
+            if (!hdSrc || !parent) return;
+            if (preview) preview.pause();
+
+            var holder = document.createElement('div');
+            holder.className = 'video-hd-holder';
+
+            var loading = document.createElement('div');
+            loading.className = 'video-hd-loading';
+            loading.setAttribute('role', 'status');
+            loading.textContent = 'Loading full quality…';
+
+            var video = document.createElement('video');
+            video.setAttribute('width', '100%');
+            video.setAttribute('controls', '');
+            video.setAttribute('playsinline', '');
+            video.setAttribute('webkit-playsinline', '');
+            video.setAttribute('preload', 'auto');
+            var source = document.createElement('source');
+            source.src = hdSrc;
+            source.type = hdType;
+            video.appendChild(source);
+            video.addEventListener('webkitendfullscreen', function() {
+                video.muted = true;
+            });
+            holder.appendChild(loading);
+            holder.appendChild(video);
+            parent.replaceChild(holder, wrap);
+            video.load();
+
+            function clearLoading() {
+                if (loading.parentNode) loading.parentNode.removeChild(loading);
+            }
+
+            function playThenTryFullscreen() {
+                return Promise.resolve(video.play()).catch(function() {
+                    video.muted = true;
+                    return video.play();
+                }).then(function() {
+                    return requestVideoFullscreen(video);
+                }).catch(function() {});
+            }
+
+            var slowTimer = setTimeout(function() {
+                if (loading.parentNode) {
+                    loading.textContent = 'Still loading… large files take longer. If this never finishes, export an H.264 .mp4 with fast start (ffmpeg -movflags +faststart).';
+                }
+            }, 12000);
+
+            var started = false;
+            function onReady() {
+                if (started) return;
+                started = true;
+                clearTimeout(slowTimer);
+                clearLoading();
+                playThenTryFullscreen();
+            }
+
+            video.addEventListener('error', function() {
+                clearTimeout(slowTimer);
+                loading.textContent = 'Could not load this video. Large .mov files often need an H.264 .mp4 for the web (use ffmpeg), or try Safari.';
+            }, { once: true });
+
+            if (video.readyState >= 3) {
+                onReady();
+            } else {
+                video.addEventListener('canplay', onReady, { once: true });
+            }
+        });
+    });
+})();
+
+(function() {
+    function muteVideosIfNotFullscreen() {
+        var fs = document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement;
+        if (fs) return;
+        document.querySelectorAll('video').forEach(function(v) {
+            v.muted = true;
+        });
+    }
+    document.addEventListener('fullscreenchange', muteVideosIfNotFullscreen);
+    document.addEventListener('webkitfullscreenchange', muteVideosIfNotFullscreen);
+    document.addEventListener('MSFullscreenChange', muteVideosIfNotFullscreen);
 })();
 </script>
 
