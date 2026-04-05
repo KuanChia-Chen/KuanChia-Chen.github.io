@@ -543,13 +543,33 @@
         margin:0;
     }
 
-    .skills-list ul li{
-        margin-bottom:10px;
+    .skills-list ul li.skills-item{
+        display:flex;
+        align-items:flex-start;
+        gap:10px;
+        margin-bottom:12px;
     }
 
-    .skills-list ul li:before{
+    .skills-list ul li.skills-item:before{
         content:'\2022';
-        margin-right:10px;
+        flex-shrink:0;
+        margin-right:0;
+        line-height:1.5;
+    }
+
+    .skills-list ul li .skills-item-body{
+        flex:1;
+        min-width:0;
+        line-height:1.5;
+    }
+
+    .skills-list ul li.skills-item-stacked strong{
+        display:block;
+    }
+
+    .skills-list ul li.skills-item-stacked .skills-detail{
+        display:block;
+        margin-top:0.25em;
     }
 
     footer{
